@@ -1,0 +1,92 @@
+.App {
+  text-align: center;
+}
+
+header {
+  padding: 10px;
+}
+
+main {
+  position: relative;
+  padding: 20px;
+  margin-top: 100px;
+  z-index: 2;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.canvas {
+  display: block;
+  opacity: 0.7;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  overflow: hidden;
+  background: linear-gradient(45deg, #367a36, #605542, #59793d);
+  background-size: 300%, 300%;
+  animation: color 12s ease-in-out infinite;
+}
+@keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.mask {
+  position: absolute;
+  z-index: 2;
+  background: linear-gradient(
+    to bottom,
+    hsla(158, 23%, 18%, 0) 0%,
+    hsla(158, 23%, 18%, 0.013) 9.7%,
+    hsla(158, 23%, 18%, 0.049) 18.1%,
+    hsla(158, 23%, 18%, 0.104) 25.5%,
+    hsla(158, 23%, 18%, 0.175) 31.9%,
+    hsla(158, 23%, 18%, 0.259) 37.7%,
+    hsla(158, 23%, 18%, 0.352) 43%,
+    hsla(158, 23%, 18%, 0.45) 47.9%,
+    hsla(158, 23%, 18%, 0.55) 52.8%,
+    hsla(158, 23%, 18%, 0.648) 57.7%,
+    hsla(158, 23%, 18%, 0.741) 63%,
+    hsla(158, 23%, 18%, 0.825) 68.7%,
+    hsla(158, 23%, 18%, 0.896) 75%,
+    hsla(158, 23%, 18%, 0.951) 82.2%,
+    hsla(158, 23%, 18%, 0.987) 90.5%,
+    hsl(158, 23%, 18%) 100%
+  );
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.canvas-holder {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}

@@ -33,7 +33,7 @@
   overflow: hidden;
 }
 .anim2 {
-  background: linear-gradient(45deg, #b35405, #3cac1c);
+  background: linear-gradient(45deg, #5c2b03, #337d33);
   animation: animate2 30s linear infinite;
   position: absolute;
   filter: blur(100px) saturate(5);
@@ -57,7 +57,7 @@
   overflow: hidden;
 }
 .anim4 {
-  background: linear-gradient(45deg, #0c94ce, #055414);
+  background: linear-gradient(45deg, #0f5e80, #094314);
   animation: animate4 30s linear infinite;
   position: absolute;
   filter: blur(100px) saturate(5);
@@ -69,7 +69,7 @@
   overflow: hidden;
 }
 .anim5 {
-  background: linear-gradient(45deg, #e2ae29, #9ce11c);
+  background: linear-gradient(45deg, #815e06, #0d5b1a);
   animation: animate5 30s linear infinite;
   position: absolute;
   filter: blur(100px) saturate(5);
@@ -94,24 +94,24 @@
     transform: translateX(100%) translateY(0%);
   }
   100% {
-    transform: translateX(50%) translateY(0%);
+    transform: translateX(100%) translateY(0%);
   }
 }
 @keyframes animate2 {
   0% {
-    transform: translateX(100%) translateY(0%);
+    transform: translateX(20%) translateY(-20%);
   }
   25% {
-    transform: translateX(50%) translateY(0%) rotate(0deg);
+    transform: translateX(0%) translateY(-30%) rotate(0deg);
   }
   50% {
-    transform: translateX(0%) translateY(10%) rotate(100deg);
+    transform: translateX(-60%) translateY(-20%);
   }
   75% {
-    transform: translateX(50%) translateY(0%);
+    transform: translateX(-20%) translateY(0%);
   }
   100% {
-    transform: translateX(100%) translateY(0%);
+    transform: translateX(20%) translateY(-20%) rotate(0deg);
   }
 }
 @keyframes animate3 {
@@ -133,7 +133,7 @@
 }
 @keyframes animate4 {
   0% {
-    transform: translateX(0%) translateY(0%);
+    transform: translateX(-50%) translateY(0%);
   }
   25% {
     transform: translateX(0%) translateY(20%) rotate(0deg);
@@ -145,24 +145,24 @@
     transform: translateX(50%) translateY(0%);
   }
   100% {
-    transform: translateX(0%) translateY(0%);
+    transform: translateX(-50%) translateY(0%) rotate(0deg);
   }
 }
 @keyframes animate5 {
   0% {
-    transform: translateX(0%) translateY(0%);
+    transform: translateX(100%) translateY(100%) rotate(0);
   }
   25% {
-    transform: translateX(50%) translateY(40%);
-  }
-  50% {
-    transform: translateX(80%) translateY(0%) rotate(0);
-  }
-  75% {
     transform: translateX(50%) translateY(40%) rotate(200deg);
   }
+  50% {
+    transform: translateX(80%) translateY(0%);
+  }
+  75% {
+    transform: translateX(50%) translateY(40%);
+  }
   100% {
-    transform: translateX(0%) translateY(0%) rotate(360deg);
+    transform: translateX(100%) translateY(100%) rotate(0deg);
   }
 }
 

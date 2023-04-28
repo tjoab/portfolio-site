@@ -8,6 +8,10 @@ import Fun from "./pages/Fun";
 import NotFound from "./pages/404";
 import Canvas from "./components/Canvas";
 
+import "./fonts/gt.woff";
+import "./fonts/acorn.woff";
+import "./fonts/benz.woff";
+
 function App() {
   return (
     <div>

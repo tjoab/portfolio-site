@@ -1,3 +1,20 @@
+@font-face {
+  font-family: "acorn";
+  src: local("acorn"), url("./fonts/acorn.woff") format("woff");
+}
+
+@font-face {
+  font-family: "gt";
+
+  src: local("gt"), url("./fonts/gt.woff") format("woff");
+}
+
+@font-face {
+  font-family: "benz";
+
+  src: local("benz"), url("./fonts/benz.woff") format("woff");
+}
+
 .App {
   text-align: center;
 }

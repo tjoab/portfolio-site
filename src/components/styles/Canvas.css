@@ -1,0 +1,203 @@
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.canvas {
+  display: block;
+  opacity: 0.7;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+.anim1 {
+  background: linear-gradient(45deg, #565031, #567c35);
+  animation: animate1 30s linear infinite;
+  position: absolute;
+  filter: blur(100px) saturate(5);
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  overflow: hidden;
+}
+.anim2 {
+  background: linear-gradient(45deg, #b35405, #3cac1c);
+  animation: animate2 30s linear infinite;
+  position: absolute;
+  filter: blur(100px) saturate(5);
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  overflow: hidden;
+}
+.anim3 {
+  background: linear-gradient(45deg, #704e0c, #2b583d);
+  animation: animate3 30s linear infinite;
+  position: absolute;
+  filter: blur(100px) saturate(5);
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  overflow: hidden;
+}
+.anim4 {
+  background: linear-gradient(45deg, #0c94ce, #055414);
+  animation: animate4 30s linear infinite;
+  position: absolute;
+  filter: blur(100px) saturate(5);
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  overflow: hidden;
+}
+.anim5 {
+  background: linear-gradient(45deg, #e2ae29, #9ce11c);
+  animation: animate5 30s linear infinite;
+  position: absolute;
+  filter: blur(100px) saturate(5);
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  overflow: hidden;
+}
+@keyframes animate1 {
+  0% {
+    transform: translateX(100%) translateY(0%);
+  }
+  25% {
+    transform: translateX(50%) translateY(10%);
+  }
+  50% {
+    transform: translateX(50%) translateY(10%);
+  }
+  75% {
+    transform: translateX(100%) translateY(0%);
+  }
+  100% {
+    transform: translateX(50%) translateY(0%);
+  }
+}
+@keyframes animate2 {
+  0% {
+    transform: translateX(100%) translateY(0%);
+  }
+  25% {
+    transform: translateX(50%) translateY(0%) rotate(0deg);
+  }
+  50% {
+    transform: translateX(0%) translateY(10%) rotate(100deg);
+  }
+  75% {
+    transform: translateX(50%) translateY(0%);
+  }
+  100% {
+    transform: translateX(100%) translateY(0%);
+  }
+}
+@keyframes animate3 {
+  0% {
+    transform: translateX(0%) translateY(0%);
+  }
+  25% {
+    transform: translateX(50%) translateY(50%);
+  }
+  50% {
+    transform: translateX(100%) translateY(10%);
+  }
+  75% {
+    transform: translateX(50%) translateY(0%);
+  }
+  100% {
+    transform: translateX(0%) translateY(0%);
+  }
+}
+@keyframes animate4 {
+  0% {
+    transform: translateX(0%) translateY(0%);
+  }
+  25% {
+    transform: translateX(0%) translateY(20%) rotate(0deg);
+  }
+  50% {
+    transform: translateX(10%) translateY(60%) rotate(100deg);
+  }
+  75% {
+    transform: translateX(50%) translateY(0%);
+  }
+  100% {
+    transform: translateX(0%) translateY(0%);
+  }
+}
+@keyframes animate5 {
+  0% {
+    transform: translateX(0%) translateY(0%);
+  }
+  25% {
+    transform: translateX(50%) translateY(40%);
+  }
+  50% {
+    transform: translateX(80%) translateY(0%) rotate(0);
+  }
+  75% {
+    transform: translateX(50%) translateY(40%) rotate(200deg);
+  }
+  100% {
+    transform: translateX(0%) translateY(0%) rotate(360deg);
+  }
+}
+
+.mask {
+  position: absolute;
+  z-index: 2;
+  background: linear-gradient(
+    to bottom,
+    hsla(158, 23%, 18%, 0) 0%,
+    hsla(158, 23%, 18%, 0.013) 9.7%,
+    hsla(158, 23%, 18%, 0.049) 18.1%,
+    hsla(158, 23%, 18%, 0.104) 25.5%,
+    hsla(158, 23%, 18%, 0.175) 31.9%,
+    hsla(158, 23%, 18%, 0.259) 37.7%,
+    hsla(158, 23%, 18%, 0.352) 43%,
+    hsla(158, 23%, 18%, 0.45) 47.9%,
+    hsla(158, 23%, 18%, 0.55) 52.8%,
+    hsla(158, 23%, 18%, 0.648) 57.7%,
+    hsla(158, 23%, 18%, 0.741) 63%,
+    hsla(158, 23%, 18%, 0.825) 68.7%,
+    hsla(158, 23%, 18%, 0.896) 75%,
+    hsla(158, 23%, 18%, 0.951) 82.2%,
+    hsla(158, 23%, 18%, 0.987) 90.5%,
+    hsl(158, 23%, 18%) 100%
+  );
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.canvas-holder {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./styles/NavBar.css";
 
@@ -8,6 +8,7 @@ function NavBar() {
     left: 0,
     width: 0,
   });
+  const [scrolled, setScrolled] = useState(false);
 
   const handleSetActiveLinkPosition = (linkElement) => {
     const linkRect = linkElement.getBoundingClientRect();
@@ -22,9 +23,26 @@ function NavBar() {
     return location.pathname === pathname;
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      if (offset > 30) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav>
-      <ul>
+    <nav id="navbar">
+      <ul className={scrolled ? "glass" : ""}>
         <li>
           <Link
             to="/"

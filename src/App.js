@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Fun from "./pages/Fun";
 import NotFound from "./pages/404";
+import Canvas from "./components/Canvas";
 
 function App() {
   return (
@@ -14,12 +15,7 @@ function App() {
         <header>
           <NavBar />
         </header>
-        <div className="canvas">
-          <div className="canvas-holder">
-            <canvas id="canvas" width={32} height={32}></canvas>
-            <div className="mask"></div>
-          </div>
-        </div>
+        <Canvas />
         <main>
           <div className="container">
             <Routes>

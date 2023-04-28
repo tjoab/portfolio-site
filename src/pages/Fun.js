@@ -1,12 +1,8 @@
 import React from "react";
+import HeroFun from "../components/HeroFun";
 
 function Fun() {
-  return (
-    <div>
-      <h1>Welcome to my fun pag!</h1>
-      <p>This is where I tell you about some of my hobbies.</p>
-    </div>
-  );
+  return <HeroFun />;
 }
 
 export default Fun;

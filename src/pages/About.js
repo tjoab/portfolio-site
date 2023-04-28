@@ -1,12 +1,8 @@
 import React from "react";
+import HeroAbout from "../components/HeroAbout";
 
 function About() {
-  return (
-    <div>
-      <h1>Welcome to my About Page!</h1>
-      <p>This is where I tell you all about myself.</p>
-    </div>
-  );
+  return <HeroAbout />;
 }
 
 export default About;

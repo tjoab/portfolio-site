@@ -17,7 +17,7 @@ function App() {
         </header>
         <Canvas />
         <main>
-          <div className="container">
+          <div className="content">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />

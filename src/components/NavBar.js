@@ -40,11 +40,16 @@ function NavBar() {
     };
   }, []);
 
+  useEffect(() => {
+    handleSetActiveLinkPosition(document.querySelector('a[href="/"]'));
+  }, []);
+
   return (
     <nav id="navbar">
       <ul className={scrolled ? "glass" : ""}>
         <li>
           <Link
+            id="homeLink"
             to="/"
             onClick={(e) => handleSetActiveLinkPosition(e.target)}
             className={isActive("/") ? "active" : ""}

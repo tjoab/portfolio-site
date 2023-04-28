@@ -1,55 +1,7 @@
 import React from "react";
-import "./styles/Home.css";
+import HeroHome from "../components/HeroHome";
 
 function Home() {
-  return (
-    <>
-      <div>
-        <h1>Welcome to my homepage!</h1>
-        <p>This is where I tell you all about myself.</p>
-      </div>
-      <div>
-        <h1>Welcome to my homepage!</h1>
-        <p>This is where I tell you all about myself.</p>
-      </div>
-      <div>
-        <h1>Welcome to my homepage!</h1>
-        <p>This is where I tell you all about myself.</p>
-      </div>
-      <div>
-        <h1>Welcome to my homepage!</h1>
-        <p>This is where I tell you all about myself.</p>
-      </div>
-      <div>
-        <h1>Welcome to my homepage!</h1>
-        <p>This is where I tell you all about myself.</p>
-      </div>
-      <div>
-        <h1>Welcome to my homepage!</h1>
-        <p>This is where I tell you all about myself.</p>
-      </div>
-      <div>
-        <h1>Welcome to my homepage!</h1>
-        <p>This is where I tell you all about myself.</p>
-      </div>
-      <div>
-        <h1>Welcome to my homepage!</h1>
-        <p>This is where I tell you all about myself.</p>
-      </div>
-      <div>
-        <h1>Welcome to my homepage!</h1>
-        <p>This is where I tell you all about myself.</p>
-      </div>
-      <div>
-        <h1>Welcome to my homepage!</h1>
-        <p>This is where I tell you all about myself.</p>
-      </div>
-      <div>
-        <h1>Welcome to my homepage!</h1>
-        <p>This is where I tell you all about myself.</p>
-      </div>
-    </>
-  );
+  return <HeroHome />;
 }
-
 export default Home;

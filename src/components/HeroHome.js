@@ -1,45 +1,64 @@
 import React from "react";
 import "./styles/Hero.css";
 import StarIcon from "../resources/star-1.svg";
+import { motion as m } from "framer-motion";
 
 function HeroHome() {
   return (
     <>
-      <h1 className="tight">
+      <m.h1
+        className="tight"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.25, duration: 0.55, ease: "easeOut" }}
+      >
         <span slot="title" className="hero">
           <span className="holder">
             <span className="holder-content">
               Hi. I'm TJ.
-              <span className="right-star">
+              <m.span
+                className="right-star"
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ delay: 1, duration: 0.6, ease: "easeInOut" }}
+              >
                 <figure className="star">
                   <img src={StarIcon} alt=""></img>
                 </figure>
-              </span>
+              </m.span>
             </span>
           </span>
           <span className="holder">
             <span className="holder-content">
               A Data Scientist.
-              <span className="left-star">
+              <m.span
+                className="left-star"
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ delay: 1, duration: 0.6, ease: "easeInOut" }}
+              >
                 <figure className="star">
                   <img src={StarIcon} alt=""></img>
                 </figure>
-              </span>
+              </m.span>
             </span>
           </span>
         </span>
-      </h1>
-      <div className="wrapper">
+      </m.h1>
+      <m.div
+        className="wrapper"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.35, duration: 0.55, ease: "easeOut" }}
+      >
         <p className="center">
           <div className="subtitle">
-            At school, I learnt a lot about how to problem solve and think
-            creatively, applying various skillsets to both real-wold and
-            abstract applications. Aside from studying, I enjoy playing around
-            with front-end web design and occasionally work as a freelance
-            photographer/videographer.
+            I am a creative at heart and love to tell stories through
+            unconventional mediums. From data analysis and model building to
+            photography and creative coding.
           </div>
         </p>
-      </div>
+      </m.div>
     </>
   );
 }

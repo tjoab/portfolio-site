@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./styles/NavBar.css";
+import { motion as m } from "framer-motion";
 
 function NavBar() {
   const location = useLocation();
@@ -45,7 +46,12 @@ function NavBar() {
   }, []);
 
   return (
-    <nav id="navbar">
+    <m.nav
+      id="navbar"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.75, duration: 1, ease: "easeOut" }}
+    >
       <ul className={scrolled ? "glass" : ""}>
         <li>
           <Link
@@ -77,14 +83,17 @@ function NavBar() {
           </Link>
         </li>
       </ul>
-      <div
+      <m.div
         className="background"
         style={{
           "--left": `${activeLinkPosition.left}px`,
           "--width": `${activeLinkPosition.width}px`,
         }}
-      ></div>
-    </nav>
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5, duration: 0.5, ease: "easeOut" }}
+      ></m.div>
+    </m.nav>
   );
 }
 

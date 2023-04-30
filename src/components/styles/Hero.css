@@ -157,7 +157,7 @@ img {
 .hero-img {
   object-fit: cover;
   width: 100%;
-  border-radius: 200px 200px 0 0;
+  border-radius: 200px;
   transition: all 0.2s ease-in-out;
   max-width: inherit;
   position: relative;

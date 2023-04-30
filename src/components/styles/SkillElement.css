@@ -1,0 +1,41 @@
+.skillElement {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+}
+
+.skillContent {
+  align-items: center;
+  background: rgb(35, 56, 49);
+  border: 0.125rem solid rgb(143, 220, 194);
+  border-radius: 1.25rem;
+  display: inline-flex;
+  height: 1.5rem;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+.skillImgWrap {
+  margin-right: 0.5rem;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  overflow: hidden;
+}
+
+.skillImg {
+  max-width: 100%;
+  display: block;
+  position: static;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  object-fit: cover;
+  border-style: none;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}

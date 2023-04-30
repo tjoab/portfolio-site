@@ -57,6 +57,16 @@ function Footer() {
             LinkedIn
           </a>
         </li>
+        <li class="list-item">
+          <a
+            href="https://medium.com/@tj.ayoub"
+            target="_blank"
+            rel="nofollow noreferrer"
+            class="list-item"
+          >
+            Medium
+          </a>
+        </li>
       </ul>
     </footer>
   );

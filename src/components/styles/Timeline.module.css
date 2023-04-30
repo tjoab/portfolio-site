@@ -1,0 +1,15 @@
+.timelineHolder {
+  padding: 0 4rem;
+}
+.timelineGrid {
+  grid-row-gap: 1rem;
+  margin-bottom: max(
+    2.652rem,
+    calc(2.652rem + (84 - 42) * ((100vw - 375px) / (1600 - 375)))
+  );
+  display: grid;
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 100%;
+  grid-template-columns: repeat(25, 1fr);
+}

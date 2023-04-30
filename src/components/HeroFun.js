@@ -7,7 +7,7 @@ function HeroFun() {
       <h1 className="tight">
         <span slot="title" className="hero">
           <span className="holder">
-            <span className="holder-content">Fun.</span>
+            <span className="holder-content">Some Fun.</span>
           </span>
         </span>
       </h1>

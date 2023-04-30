@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import HeroHome from "../components/HeroHome";
 import Card from "../components/Card";
 import "./styles/Home.css";
@@ -12,6 +13,9 @@ import { motion as m } from "framer-motion";
 function Home() {
   return (
     <div>
+      <Helmet>
+        <title>TJ Ayoub • Data Scientist</title>
+      </Helmet>
       <HeroHome />
       <m.div
         className="cards"

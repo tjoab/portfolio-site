@@ -67,6 +67,16 @@ function Footer() {
             Medium
           </a>
         </li>
+        <li class="list-item">
+          <a
+            href="https://500px.com/p/tjoab?view=photos"
+            target="_blank"
+            rel="nofollow noreferrer"
+            class="list-item"
+          >
+            500px
+          </a>
+        </li>
       </ul>
     </footer>
   );

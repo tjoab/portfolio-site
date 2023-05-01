@@ -5,7 +5,7 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Fun from "./pages/Fun";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/404";
 import Canvas from "./components/Canvas";
 import ScrollToTop from "./components/ScrollToTop";
@@ -27,7 +27,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/fun" element={<Fun />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>

@@ -6,7 +6,6 @@ import Blurb from "../components/Blurb";
 import "./styles/About.css";
 import capa from "../resources/capa.JPG";
 import crane from "../resources/crane.JPG";
-import tdot from "../resources/tdotBW.jpg";
 
 import { Helmet } from "react-helmet";
 
@@ -17,7 +16,7 @@ function About() {
     "These are some areas where I have invested time and energy over the years and continue to explore and develop. I hope this gives you a better sense of who I am and what I bring to the table.",
   ];
   const fun = [
-    "Outside of school and work, I enjoy a good coffee within the hustle and bustle of the city, going on photography walks, exploring new trails and locations on my bike, and playing soccer with strangers on Sunday nights.",
+    "Outside of school and work, I enjoy a good coffee within the hustle and bustle of the city, going on photography walks, exploring new trails and locations on my bike, and playing soccer with strangers on Sunday nights. You can find more of my photo work on <u><b> 500px</b></u>, just click one of the images below!",
   ];
 
   return (
@@ -32,14 +31,28 @@ function About() {
       <Blurb texts={fun} />
       <div className="pics">
         <div className="largePic">
-          <figure className="picWrap">
-            <img className="pic" src={capa}></img>
-          </figure>
+          <a
+            className="picLink"
+            href="https://500px.com/p/tjoab?view=photos"
+            target="_blank"
+            rel="nofollow noreferrer"
+          >
+            <figure className="picWrap">
+              <img className="pic" src={capa}></img>
+            </figure>
+          </a>
         </div>
         <div className="smallPic">
-          <figure className="picWrap">
-            <img className="pic" src={crane}></img>
-          </figure>
+          <a
+            className="picLink"
+            href="https://500px.com/p/tjoab?view=photos"
+            target="_blank"
+            rel="nofollow noreferrer"
+          >
+            <figure className="picWrap">
+              <img className="pic" src={crane}></img>
+            </figure>
+          </a>
         </div>
       </div>
     </>

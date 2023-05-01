@@ -75,11 +75,11 @@ function NavBar() {
         </li>
         <li>
           <Link
-            to="/fun"
+            to="/contact"
             onClick={(e) => handleSetActiveLinkPosition(e.target)}
-            className={isActive("/fun") ? "active" : ""}
+            className={isActive("/contact") ? "active" : ""}
           >
-            Fun
+            Contact
           </Link>
         </li>
       </ul>

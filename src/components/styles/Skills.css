@@ -1,7 +1,5 @@
 .skillsWrap {
-  height: 100%;
-  max-width: 1600px;
-  width: 100%;
+  display: content;
 }
 .skillsGrid {
   grid-template-columns: repeat(39, 1fr);

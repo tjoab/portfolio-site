@@ -9,7 +9,7 @@
     calc(2.652rem + (84 - 42) * ((100vw - 375px) / (1600 - 375)))
   );
   display: grid;
-  max-width: 1600px;
+  max-width: 900px;
   margin: 0 auto;
   width: 65%;
 }

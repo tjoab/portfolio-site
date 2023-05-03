@@ -40,6 +40,7 @@ nav li {
   position: relative;
   list-style-type: none;
   text-align: -webkit-match-parent;
+  z-index: 1000;
 }
 
 nav a {
@@ -54,6 +55,7 @@ nav a {
   margin: 0 5px;
   padding: calc(1rem - 10px) 1.25rem;
   cursor: pointer;
+  z-index: 1000;
 }
 
 .slash {
@@ -68,6 +70,7 @@ nav a {
   border-radius: 6px;
   margin-left: calc(0.875rem - 8px);
   pointer-events: none;
+  z-index: 1000;
 }
 
 .background {

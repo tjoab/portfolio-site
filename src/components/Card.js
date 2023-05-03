@@ -1,8 +1,9 @@
 import React from "react";
 import "./styles/Card.css";
+import { Link } from "react-router-dom";
 
 function Card(props) {
-  const { projName, category, imageSrc, bgCol, start, end } = props;
+  const { projName, category, imageSrc, bgCol, start, end, workLink } = props;
 
   const styling = {
     background: bgCol,
@@ -11,7 +12,7 @@ function Card(props) {
   };
   return (
     <div className="card-box" style={styling}>
-      <a className="card">
+      <Link to={workLink} className="card">
         <div className="card-wrap">
           <div className="info">
             <span className="proj-title">{category}</span>
@@ -30,7 +31,7 @@ function Card(props) {
             </div>
           </div>
         </div>
-      </a>
+      </Link>
     </div>
   );
 }

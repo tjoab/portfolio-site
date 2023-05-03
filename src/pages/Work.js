@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import HeroHome from "../components/HeroHome";
 import Card from "../components/Card";
-import "./styles/Home.css";
+import "./styles/Work.css";
 import Wordle from "../resources/wordle.png";
 import Lambert from "../resources/lambert.png";
 import NBA from "../resources/nba.png";
@@ -10,7 +10,7 @@ import DL from "../resources/lstm.png";
 
 import { motion as m } from "framer-motion";
 
-function Home() {
+function Work() {
   return (
     <div>
       <Helmet>
@@ -31,6 +31,7 @@ function Home() {
             bgCol="hsla(284, 61%, 74%, 1)"
             start={1}
             end={10}
+            workLink="/work/wordle"
           />
           <Card
             projName="Bayesian Deep Learning"
@@ -39,6 +40,7 @@ function Home() {
             bgCol="hsla(172, 45%, 75%, 1)"
             start={11}
             end={26}
+            workLink="/work/deepLearning"
           />
           <Card
             projName="LambertW Functionality"
@@ -47,6 +49,7 @@ function Home() {
             bgCol="hsla(22, 62%, 76%, 1)"
             start={1}
             end={16}
+            workLink="/work/lambertW"
           />
           <Card
             projName="The 2-for-1 Play"
@@ -55,10 +58,11 @@ function Home() {
             bgCol="hsla(206, 84%, 86%, 1)"
             start={17}
             end={26}
+            workLink="/work/2for1"
           />
         </div>
       </m.div>
     </div>
   );
 }
-export default Home;
+export default Work;

@@ -16,6 +16,7 @@ import NotFound from "./pages/404";
 import Canvas from "./components/Canvas";
 import ScrollToTop from "./components/ScrollToTop";
 import WorkFiller from "./pages/WorkFiller";
+import WorkDL from "./pages/WorkDL";
 import "./fonts/gt.woff";
 import "./fonts/acorn.woff";
 import "./fonts/benz.woff";
@@ -37,7 +38,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
             <Route path="/work/wordle" element={<WorkFiller />} />
-            <Route path="/work/deepLearning" element={<WorkFiller />} />
+            <Route path="/work/deepLearning" element={<WorkDL />} />
             <Route path="/work/lambertW" element={<WorkFiller />} />
             <Route path="/work/2for1" element={<WorkFiller />} />
           </Routes>

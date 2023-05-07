@@ -37,6 +37,7 @@ function NavBar() {
     const isCurrentLink = e.currentTarget.pathname === location.pathname;
     if (isCurrentLink) {
       e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
     } else {
       handleSetActiveLinkPosition(e.target.closest("a"));
     }
@@ -97,6 +98,7 @@ function NavBar() {
           </Link>
         </li>
       </ul>
+
       <m.div
         className="background"
         style={{

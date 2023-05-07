@@ -18,7 +18,6 @@ nav {
   max-width: 1600px;
   margin: 1.25rem auto 0;
   position: relative;
-  z-index: 1000;
 }
 
 nav ul {
@@ -33,6 +32,7 @@ nav ul {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   line-height: 1.5;
+  z-index: 1001;
 }
 
 nav li {
@@ -40,7 +40,7 @@ nav li {
   position: relative;
   list-style-type: none;
   text-align: -webkit-match-parent;
-  z-index: 1000;
+  z-index: 1003;
 }
 
 nav a {
@@ -55,7 +55,7 @@ nav a {
   margin: 0 5px;
   padding: calc(1rem - 10px) 1.25rem;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 1004;
 }
 
 .slash {
@@ -70,7 +70,7 @@ nav a {
   border-radius: 6px;
   margin-left: calc(0.875rem - 8px);
   pointer-events: none;
-  z-index: 1000;
+  z-index: 1003;
 }
 
 .background {
@@ -80,15 +80,16 @@ nav a {
   height: 36px;
   top: calc(1.25rem + 6.5px);
   background: hsla(160, 52%, 71%, 0.1);
-  z-index: 1;
   border-radius: 1.5rem;
   display: block;
   font-size: var(--16px);
   opacity: 1;
   transition: all 0.2s ease-in-out;
+  z-index: 1002;
+  pointer-events: none;
 }
 
-.glass {
+nav ul.glass {
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
   border-radius: 40px;

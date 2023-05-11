@@ -52,8 +52,8 @@ function WorkDL() {
       >
         <p className="center">
           <div className="DL-subtitle">
-            Personal Project &nbsp; • &nbsp; Machine Learning / AI &nbsp; •
-            &nbsp; 2023
+            Personal Project &nbsp; • &nbsp; TensorFlow / Keras &nbsp; • &nbsp;
+            2023
           </div>
         </p>
       </m.div>

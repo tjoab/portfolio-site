@@ -1,0 +1,117 @@
+.DL-tight {
+  padding: 12rem 0 1rem;
+  position: relative;
+  text-align: center;
+  font-size: clamp(3.2rem, 0.5692rem + 6.238vw, 13.75rem);
+  line-height: 120%;
+  letter-spacing: -2px;
+  font-family: "acorn", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  display: block;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: hsla(160, 52%, 71%, 1);
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.DL-hero {
+  display: block;
+  position: relative;
+  z-index: 10;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.DL-holder {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.DL-holder-content {
+  position: relative;
+  display: block;
+  z-index: 10;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.DL-wrapper {
+  padding: 0 rem;
+  display: grid;
+  grid-template-columns: 1fr min(65ch, 100%) 1fr;
+  position: relative;
+  box-sizing: border-box;
+  font-family: "gt", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: rem;
+  color: hsla(160, 52%, 71%, 1);
+}
+
+.center {
+  font-size: clamp(1rem, 0.8852rem + 0.4898vw, 1.375rem);
+  text-align: center;
+  grid-column: 2;
+  color: hsla(159, 42%, 88%, 1);
+  letter-spacing: -0.3px;
+  line-height: 160%;
+  margin: 0;
+  box-sizing: border-box;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.DL-subtitle {
+  display: block;
+  box-sizing: border-box;
+}
+.latex {
+  color: hsla(159, 42%, 88%, 1);
+}
+.linkHolder {
+  padding: 0 4rem;
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.linkGrid {
+  margin-bottom: max(
+    2.652rem,
+    calc(2.652rem + (84 - 42) * ((100vw - 375px) / (1600 - 375)))
+  );
+  display: grid;
+  max-width: 300;
+  margin: 0 auto;
+  width: 200px;
+}
+
+.linkLink {
+  color: hsla(160, 52%, 71%, 1);
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  transition: all 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkLink:hover {
+  color: hsla(159, 42%, 88%, 1);
+}

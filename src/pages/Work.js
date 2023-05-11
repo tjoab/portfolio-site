@@ -25,7 +25,7 @@ function Work() {
       >
         <div className="card-content">
           <Card
-            projName="Wordle Solver"
+            projName="Wordle Assistant"
             category="Web App"
             imageSrc={Wordle}
             bgCol="hsla(284, 61%, 74%, 1)"

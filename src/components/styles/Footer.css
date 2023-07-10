@@ -21,7 +21,7 @@
   flex: 1;
   margin-top: -6rem;
   grid-column-start: 5;
-  grid-column-end: 15;
+  grid-column-end: 17;
   display: flex;
   grid-row: 1;
 }
@@ -142,18 +142,19 @@ svg {
   .list-item {
     display: inline-block;
     margin-right: 0.5rem;
+    font-size: 15px;
   }
   .music {
     grid-row: 1;
     margin-top: 0rem;
     grid-column-start: 5;
-    grid-column-end: 21;
+    grid-column-end: 23;
   }
   .list-elsewhere {
     grid-row: 2;
     margin-top: 2.5rem;
     grid-column-start: 5;
-    grid-column-end: 21;
+    grid-column-end: 29;
   }
   .legal {
     grid-row: 3;

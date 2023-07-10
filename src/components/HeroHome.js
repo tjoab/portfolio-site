@@ -23,7 +23,7 @@ function HeroHome() {
                 transition={{ delay: 1, duration: 0.6, ease: "easeInOut" }}
               >
                 <figure className="star">
-                  <img src={StarIcon} alt=""></img>
+                  <img className="star-img" src={StarIcon} alt=""></img>
                 </figure>
               </m.span>
             </span>
@@ -38,7 +38,7 @@ function HeroHome() {
                 transition={{ delay: 1, duration: 0.6, ease: "easeInOut" }}
               >
                 <figure className="star">
-                  <img src={StarIcon} alt=""></img>
+                  <img className="star-img" src={StarIcon} alt=""></img>
                 </figure>
               </m.span>
             </span>

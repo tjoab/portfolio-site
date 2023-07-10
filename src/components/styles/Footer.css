@@ -4,6 +4,7 @@
   margin: 0 auto;
   width: 100%;
   grid-template-columns: repeat(25, 1fr);
+  grid-template-rows: auto auto;
   padding: max(4rem, calc(4rem + (128 - 64) * ((100vw - 375px) / (1600 - 375))))
     0;
   position: relative;
@@ -11,23 +12,27 @@
 }
 
 .fun {
-  grid-column-start: 5;
-  grid-column-end: 15;
-  display: block;
+  display: flex;
 }
 .music {
   display: flex;
   align-content: center;
   align-items: center;
+  flex: 1;
+  margin-top: -6rem;
+  grid-column-start: 5;
+  grid-column-end: 15;
+  display: flex;
+  grid-row: 1;
+}
+.wrapper-foot {
+  display: contents;
   background: hsla(160, 52%, 71%, 0.1);
   border-radius: 50px;
   padding: 1rem 2.652rem 1rem 1.25rem;
   overflow: hidden;
   transition: all 0.2s ease-in-out;
-  margin-top: 1.5rem;
-}
-.wrapper {
-  display: contents;
+  width: 100%;
 }
 .icon {
   display: flex;
@@ -45,6 +50,7 @@ svg {
   overflow: hidden;
   flex: 1;
   margin-left: 1.25rem;
+  gap: 2px;
 }
 .action {
   opacity: 0.8;
@@ -70,21 +76,22 @@ svg {
   display: flex;
   gap: 10px;
   position: relative;
-  margin-top: max(
-    1.3125rem,
-    calc(1.3125rem + (42 - 21) * ((100vw - 375px) / (1600 - 375)))
-  );
   color: hsla(159, 42%, 88%, 1);
   font-size: clamp(0.875rem, 0.7985rem + 0.3265vw, 1.125rem);
   font-family: "acorn", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  grid-row: 2;
+  grid-column-start: 5;
+  grid-column-end: 10;
+  margin-top: -6rem;
 }
 .legal-content {
   position: relative;
 }
 .list-elsewhere {
   grid-column-start: 19;
-  grid-column-end: 23;
+  grid-column-end: 21;
+  grid-row: 1;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -125,4 +132,33 @@ svg {
 
 .list-item:hover {
   color: hsla(160, 52%, 71%, 1);
+}
+@media (max-width: 560px) {
+  .list-elsewhere {
+    margin-top: 1.5rem;
+    padding-inline-start: 0;
+  }
+
+  .list-item {
+    display: inline-block;
+    margin-right: 0.5rem;
+  }
+  .music {
+    grid-row: 1;
+    margin-top: 0rem;
+    grid-column-start: 5;
+    grid-column-end: 21;
+  }
+  .list-elsewhere {
+    grid-row: 2;
+    margin-top: 2.5rem;
+    grid-column-start: 5;
+    grid-column-end: 21;
+  }
+  .legal {
+    grid-row: 3;
+    margin-top: 2.5rem;
+    grid-column-start: 5;
+    grid-column-end: 21;
+  }
 }

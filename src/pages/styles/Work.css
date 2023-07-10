@@ -17,3 +17,14 @@
   grid-template-columns: repeat(25, 1fr);
   box-sizing: border-box;
 }
+
+@media (max-width: 465px) {
+  .card-content {
+    display: flex;
+    flex-direction: column; /* Vertical layout for mobile */
+    grid-row-gap: 2.5rem;
+  }
+  .cards {
+    padding: 0 1.5rem 1rem;
+  }
+}

@@ -24,6 +24,7 @@
   text-decoration: none;
   box-sizing: border-box;
 }
+
 .card-wrap {
   padding: 2.652rem 4rem 0;
   border-radius: 4rem;
@@ -104,4 +105,30 @@ figure {
   aspect-ratio: auto 13 / 6;
   overflow-clip-margin: content-box;
   overflow: clip;
+}
+@media (max-width: 465px) {
+  .card {
+    max-height: 250px;
+    border-radius: 3rem;
+  }
+  .card-wrap {
+    padding: 1.652rem 2rem 0;
+    border-radius: 3rem;
+  }
+  .inner {
+    margin-top: 0.65rem;
+  }
+  .image-holder {
+    max-width: 565px;
+  }
+  .card-image {
+    max-width: 565px;
+  }
+  .card-box:hover {
+    box-shadow: 0 1rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+  }
+  .card-box:hover .inner {
+    margin-top: 1.6rem;
+  }
 }

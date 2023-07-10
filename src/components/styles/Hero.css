@@ -214,3 +214,21 @@ img {
   text-align: center;
   letter-spacing: -0.3px;
 }
+@media (max-width: 465px) {
+  .tight {
+    padding: 8.5rem 1rem 3rem;
+  }
+  .right-star {
+    right: -6.5rem;
+    top: -3.5rem;
+  }
+
+  .left-star {
+    left: -5rem;
+    bottom: -4.3rem;
+  }
+  .star-img {
+    width: 25px;
+    height: 25px;
+  }
+}

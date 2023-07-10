@@ -15,8 +15,8 @@ function Socials() {
     <div className="socialHolder">
       <div className="socialGrid">
         <m.a
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: -10, transform: "translate3d(0, 0, 0)" }}
+          animate={{ opacity: 1, y: 0, transform: "translate3d(0, 0, 0)" }}
           transition={{ delay: 0.6, duration: 0.5, ease: "easeOut" }}
           href="https://www.linkedin.com/in/tj-ayoub/"
           rel="nofollow noreferrer"
@@ -29,8 +29,8 @@ function Socials() {
           />
         </m.a>
         <m.a
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: -10, transform: "translate3d(0, 0, 0)" }}
+          animate={{ opacity: 1, y: 0, transform: "translate3d(0, 0, 0)" }}
           transition={{ delay: 0.675, duration: 0.5, ease: "easeOut" }}
           href="https://twitter.com/0xtjoab"
           rel="nofollow noreferrer"
@@ -43,8 +43,8 @@ function Socials() {
           />
         </m.a>
         <m.a
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: -10, transform: "translate3d(0, 0, 0)" }}
+          animate={{ opacity: 1, y: 0, transform: "translate3d(0, 0, 0)" }}
           transition={{ delay: 0.75, duration: 0.5, ease: "easeOut" }}
           href="https://www.instagram.com/tjoab/"
           rel="nofollow noreferrer"
@@ -57,8 +57,8 @@ function Socials() {
           />
         </m.a>
         <m.a
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: -10, transform: "translate3d(0, 0, 0)" }}
+          animate={{ opacity: 1, y: 0, transform: "translate3d(0, 0, 0)" }}
           transition={{ delay: 0.825, duration: 0.5, ease: "easeOut" }}
           href="https://medium.com/@tj.ayoub"
           rel="nofollow noreferrer"
@@ -71,8 +71,8 @@ function Socials() {
           />
         </m.a>
         <m.a
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: -10, transform: "translate3d(0, 0, 0)" }}
+          animate={{ opacity: 1, y: 0, transform: "translate3d(0, 0, 0)" }}
           transition={{ delay: 0.9, duration: 0.5, ease: "easeOut" }}
           href="https://500px.com/p/tjoab?view=photos"
           rel="nofollow noreferrer"
@@ -83,8 +83,8 @@ function Socials() {
           <Fa500Px style={{ width: "100%", height: "100%", padding: "1rem" }} />
         </m.a>
         <m.a
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: -10, transform: "translate3d(0, 0, 0)" }}
+          animate={{ opacity: 1, y: 0, transform: "translate3d(0, 0, 0)" }}
           transition={{ delay: 0.975, duration: 0.5, ease: "easeOut" }}
           href="https://github.com/tjoab"
           rel="nofollow noreferrer"

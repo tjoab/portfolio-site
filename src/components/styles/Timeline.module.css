@@ -14,3 +14,9 @@
   width: 100%;
   grid-template-columns: repeat(25, 1fr);
 }
+@media (max-width: 560px) {
+  .timelineHolder {
+    padding: 0;
+    margin-bottom: 0;
+  }
+}

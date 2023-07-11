@@ -125,6 +125,7 @@ img {
   margin: 0 auto;
   width: 100%;
   grid-template-columns: repeat(25, 1fr);
+  grid-template-rows: auto auto;
   margin-bottom: var(--spacing-l);
   box-sizing: border-box;
   font-family: "gt", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -137,6 +138,7 @@ img {
   grid-column-start: 3;
   grid-column-end: 11;
   position: relative;
+  grid-row: 1;
 }
 .me-content {
   position: relative;
@@ -168,6 +170,7 @@ img {
   grid-column-start: 12;
   grid-column-end: 24;
   margin-top: var(--24px);
+  grid-row: 1;
 }
 .intro {
   margin-top: max(
@@ -234,5 +237,24 @@ img {
   .center {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+  .me {
+    grid-row: 1;
+    grid-column-start: 3;
+    grid-column-end: 24;
+  }
+  .blurb {
+    grid-row: 2;
+    grid-column-start: 3;
+    grid-column-end: 24;
+  }
+  .hero-img {
+    height: 275px;
+  }
+  .hero-img-wrap {
+    margin-block-start: 0em;
+  }
+  .details {
+    margin-bottom: 3rem;
   }
 }

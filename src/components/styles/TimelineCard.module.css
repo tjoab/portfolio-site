@@ -11,24 +11,37 @@
   flex: 1;
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
+  white-space: initial;
 }
 .company {
   font-size: clamp(1rem, 0.9235rem + 0.3265vw, 1.25rem);
   font-weight: 600;
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
+  white-space: initial;
 }
 .title {
   font-size: clamp(1rem, 0.9617rem + 0.1633vw, 1.125rem);
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
+  white-space: initial;
   color: hsla(158, 23%, 18%, 1);
 }
 .time {
   font-family: "acorn", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: clamp(1.375rem, 1.1837rem + 0.8163vw, 1.6rem);
+}
+
+@media (max-width: 560px) {
+  .company {
+    font-size: 0.85rem;
+  }
+  .title {
+    font-size: 0.8rem;
+  }
+  .time {
+    font-size: 1.1rem;
+    margin-right: -0.5rem;
+  }
 }

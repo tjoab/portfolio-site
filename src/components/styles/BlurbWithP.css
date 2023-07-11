@@ -35,3 +35,9 @@
   margin-bottom: 1rem;
   text-align: justify;
 }
+@media (max-width: 560px) {
+  .blurbGridItem {
+    grid-column-start: 2;
+    grid-column-end: 25;
+  }
+}

@@ -39,3 +39,8 @@
   overflow-clip-margin: content-box;
   overflow: clip;
 }
+@media (max-width: 465px) {
+  .skillContent {
+    font-size: 0.8rem;
+  }
+}

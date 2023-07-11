@@ -160,6 +160,7 @@ textarea {
 
   outline: none;
   transition: border-color 0.2s;
+  -webkit-appearance: none;
 }
 
 .app-form-control::placeholder {
@@ -248,5 +249,45 @@ textarea {
 
   .screen-body-item {
     padding: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .screenContainer {
+    padding: 0;
+  }
+  .screen-header {
+    padding: 10px 17px;
+  }
+  .screen-body {
+    padding: 35px;
+    padding-bottom: 15px;
+  }
+  .app-form-control {
+    font-size: 0.65rem;
+  }
+  .error {
+    font-size: 0.65rem;
+  }
+  .message {
+    margin-bottom: 0;
+  }
+  .app-form-button {
+    font-size: 0.7rem;
+  }
+  .app-form-button {
+    margin-top: 1rem;
+  }
+  .submit-message-false {
+    font-size: 0.8rem;
+  }
+  .submit-message-true {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 465px) {
+  .screenContainer {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
   }
 }

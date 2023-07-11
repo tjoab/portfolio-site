@@ -18,7 +18,7 @@ function Skills() {
       setIsSmallScreen(window.innerWidth < 560);
     };
 
-    handleResize(); // Initial check
+    handleResize();
 
     window.addEventListener("resize", handleResize);
     return () => {

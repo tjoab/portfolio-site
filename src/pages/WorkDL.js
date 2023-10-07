@@ -2,11 +2,9 @@ import React from "react";
 import "./styles/WorkDL.css";
 import { Helmet } from "react-helmet";
 import BlurbWithP from "../components/BlurbWithP";
-import Arrow from "../components/Arrow";
 import BS from "../resources/buySell.png";
 import UN from "../resources/uncertainty.png";
 import { motion as m } from "framer-motion";
-import { Link } from "react-router-dom";
 
 function WorkDL() {
   const problem = [
@@ -40,11 +38,9 @@ function WorkDL() {
       >
         <span slot="title" className="DL-hero">
           <span className="DL-holder">
-            <Arrow left={true} link="/work/wordle" />
             <span className="DL-holder-content">
               Bayesian <br></br> Deep Learning
             </span>
-            <Arrow left={false} link="/work/lambertW" />
           </span>
         </span>
       </m.h1>

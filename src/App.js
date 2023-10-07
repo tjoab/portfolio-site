@@ -28,7 +28,7 @@ function App() {
       <header>
         <NavBar />
       </header>
-      <Canvas />
+
       <main>
         <div className="content">
           <Routes>

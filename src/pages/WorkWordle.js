@@ -3,7 +3,6 @@ import "./styles/WorkWordle.css";
 import { Helmet } from "react-helmet";
 import BlurbWithP from "../components/BlurbWithP";
 import Blurb from "../components/Blurb";
-import Arrow from "../components/Arrow";
 import { motion as m } from "framer-motion";
 import crane from "../resources/wordCrane.png";
 import frame from "../resources/wordFrame.png";
@@ -14,7 +13,6 @@ import prob from "../resources/sameProb.png";
 import table from "../resources/table.png";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
-import { Link } from "react-router-dom";
 var Latex = require("react-latex");
 
 function WorkWordle() {
@@ -86,9 +84,7 @@ function WorkWordle() {
       >
         <span slot="title" className="DL-hero">
           <span className="DL-holder">
-            <Arrow left={true} link="/work" style={{ visibility: "hidden" }} />
             <span className="DL-holder-content">Wordle Assistant</span>
-            <Arrow left={false} link="/work/deepLearning" />
           </span>
         </span>
       </m.h1>

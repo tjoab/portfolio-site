@@ -4,9 +4,7 @@ import HeroHome from "../components/HeroHome";
 import Card from "../components/Card";
 import "./styles/Work.css";
 import Wordle from "../resources/wordle.png";
-import Lambert from "../resources/lambert.png";
-import NBA from "../resources/nba.png";
-import DL from "../resources/lstm.png";
+import latex from "../resources/latex.png";
 
 import { motion as m } from "framer-motion";
 
@@ -34,31 +32,13 @@ function Work() {
             workLink="/work/wordle"
           />
           <Card
-            projName="Bayesian Deep Learning"
-            category="Model and Analysis"
-            imageSrc={DL}
+            projName="Handwritten Math to LaTeX"
+            category="Deep Learning"
+            imageSrc={latex}
             bgCol="hsla(172, 45%, 75%, 1)"
             start={11}
             end={26}
-            workLink="/work/deepLearning"
-          />
-          <Card
-            projName="LambertW Functionality"
-            category="Publication"
-            imageSrc={Lambert}
-            bgCol="hsla(22, 62%, 76%, 1)"
-            start={1}
-            end={16}
-            workLink="/work/lambertW"
-          />
-          <Card
-            projName="The 2-for-1 Play"
-            category="Model and Analysis"
-            imageSrc={NBA}
-            bgCol="hsla(206, 84%, 86%, 1)"
-            start={17}
-            end={26}
-            workLink="/work/2for1"
+            workLink="/work/im2seq"
           />
         </div>
       </m.div>

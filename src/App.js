@@ -17,6 +17,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import WorkFiller from "./pages/WorkFiller";
 import WorkDL from "./pages/WorkDL";
 import WorkWordle from "./pages/WorkWordle";
+import Im2Seq from "./pages/WorkIm2Seq";
 import "./fonts/gt.woff";
 import "./fonts/acorn.woff";
 import "./fonts/benz.woff";
@@ -28,7 +29,7 @@ function App() {
       <header>
         <NavBar />
       </header>
-
+      <Canvas />
       <main>
         <div className="content">
           <Routes>
@@ -41,6 +42,7 @@ function App() {
             <Route path="/work/deepLearning" element={<WorkDL />} />
             <Route path="/work/lambertW" element={<WorkFiller />} />
             <Route path="/work/2for1" element={<WorkFiller />} />
+            <Route path="/work/im2seq" element={<Im2Seq />} />
           </Routes>
         </div>
       </main>

@@ -27,17 +27,17 @@ function Work() {
             category="Web App"
             imageSrc={Wordle}
             bgCol="hsla(284, 61%, 74%, 1)"
-            start={1}
-            end={10}
+            start={3}
+            end={13}
             workLink="/work/wordle"
           />
           <Card
-            projName="Handwritten Math to LaTeX"
+            projName="LaTeX Translator"
             category="Deep Learning"
             imageSrc={latex}
             bgCol="hsla(172, 45%, 75%, 1)"
-            start={11}
-            end={26}
+            start={14}
+            end={24}
             workLink="/work/im2seq"
           />
         </div>

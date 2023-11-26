@@ -82,7 +82,6 @@ h2 {
 .image-holder {
   margin: 0 auto;
   width: 100%;
-  max-width: 1300px;
   display: block;
   align-items: flex-end;
 }
@@ -91,20 +90,30 @@ figure {
   position: relative;
   margin: 0;
   display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
 }
 .card-image {
   opacity: 1;
   transition: all 0.2s ease-in-out;
-  max-width: inherit;
   position: relative;
   z-index: 50;
-  aspect-ratio: auto 13 / 6;
+  aspect-ratio: auto 822 / 623;
   overflow-clip-margin: content-box;
   overflow: clip;
+}
+@media (max-width: 1350px) {
+  .card {
+    max-height: 530px;
+  }
+}
+@media (max-width: 1280px) {
+  .card {
+    max-height: 510px;
+  }
+}
+@media (max-width: 1200px) {
+  .card {
+    max-height: 480px;
+  }
 }
 @media (max-width: 465px) {
   .card {

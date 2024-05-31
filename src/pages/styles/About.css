@@ -47,7 +47,14 @@
   box-shadow: 0 0.25rem 0.5rem 0.3rem rgba(0, 0, 0, 0.1);
   transform: translateY(-3.5px);
 }
-
+@media (max-width: 750px) {
+  .pic {
+    height: 280px;
+  }
+  .pics {
+    padding: 0 1rem;
+  }
+}
 @media (max-width: 560px) {
   .pic {
     height: 200px;

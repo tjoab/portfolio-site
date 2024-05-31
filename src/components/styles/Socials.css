@@ -47,10 +47,15 @@
     margin-top: 2.5rem;
   }
 }
-@media (max-width: 465px) {
+@media (max-width: 750px) {
   .socialGrid {
     row-gap: 1rem;
   }
+  .socialHolder {
+    margin-top: 2.5rem;
+  }
+}
+@media (max-width: 450px) {
   .socialHolder {
     margin-top: 1.5rem;
   }

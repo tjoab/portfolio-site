@@ -2,8 +2,8 @@
   padding: 12rem 0 3rem;
   position: relative;
   text-align: center;
-  font-size: clamp(3.2rem, 0.5692rem + 6.238vw, 13.75rem);
-  line-height: 120%;
+  font-size: clamp(3.2rem, 0.5692rem + 6.238vw, 8rem);
+  line-height: 1.2;
   letter-spacing: -2px;
   font-family: "acorn", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -15,7 +15,8 @@
   margin-inline-end: 0px;
   color: hsla(160, 52%, 71%, 1);
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1100px;
 }
 
 .hero {
@@ -87,14 +88,13 @@ img {
   display: block;
 }
 .wrapper {
-  padding: 0 rem;
+  padding: 0rem 8rem 0rem 8rem;
   display: grid;
   grid-template-columns: 1fr min(65ch, 100%) 1fr;
   position: relative;
   box-sizing: border-box;
   font-family: "gt", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: rem;
   color: hsla(160, 52%, 71%, 1);
 }
 
@@ -217,26 +217,157 @@ img {
   text-align: center;
   letter-spacing: -0.3px;
 }
-@media (max-width: 465px) {
+@media (max-width: 1600px) {
   .tight {
-    padding: 8.5rem 1rem 3rem;
+    padding: 8rem 0 2rem;
+    font-size: clamp(3.2rem, 0.5692rem + 7.2vw, 6rem);
+  }
+}
+
+@media (max-width: 1200px) {
+  .tight {
+    padding: 8rem 0 1.5rem;
+    font-size: clamp(3.2rem, 0.5692rem + 8.2vw, 5.9rem);
+  }
+  .wrapper {
+    padding: 0 10rem 0 10rem;
   }
   .right-star {
-    right: -4.5rem;
-    top: -3.5rem;
+    right: -11rem;
+    top: -7rem;
   }
-
+  
   .left-star {
-    left: -1.3rem;
-    bottom: -3.8rem;
+    left: -9rem;
+    bottom: -6.5rem;
+  }
+}
+@media (max-width: 815px) {
+  .wrapper {
+    padding: 0 6rem 0 6rem;
+  }
+  .right-star {
+    right: -9.5rem;
+    top: -5.4rem;
+  }
+  
+  .left-star {
+    left: -7.9rem;
+    bottom: -5.2rem;
   }
   .star-img {
-    width: 25px;
-    height: 25px;
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 750px) {
+  .tight {
+    padding: 8rem 8rem 1.5rem 8rem;
+  }
+  .right-star {
+    right: -8.2rem;
+    top: -4.5rem;
+  }
+  .left-star {
+    left: -2.3rem;
+    bottom: -4.3rem;
+  }
+
+  .me {
+    grid-row: 1;
+    grid-column-start: 3;
+    grid-column-end: 24;
+  }
+  .blurb {
+    grid-row: 2;
+    grid-column-start: 3;
+    grid-column-end: 24;
+  }
+  .hero-img {
+    height: 275px;
+  }
+  .hero-img-wrap {
+    margin-block-start: 0em;
+  }
+  .details {
+    margin-bottom: 3rem;
+  }
+
+
+
+}
+@media (max-width: 700px) {
+  .left-star {
+    left: -3rem;
+    bottom: -4.3rem;
+  }
+}
+@media (max-width: 650px) {
+  .left-star {
+    left: -3.3rem;
+    bottom: -4rem;
+  }
+  .right-star {
+    right: -7rem;
+    top: -4.5rem;
+  }
+  .star-img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 600px) {
+  .left-star {
+    left: -4.2rem;
+    bottom: -3.7rem;
+  }
+}
+@media (max-width: 550px) {
+  .left-star {
+    left: -4.8rem;
+    bottom: -3.7rem;
+  }
+  .star-img {
+    width: 43px;
+    height: 43px;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    padding: 0 3rem 0 3rem;
+  }
+  .left-star {
+    left: -5.5rem;
+    bottom: -3rem;
+  }
+  .right-star {
+    right: -6.5rem;
+    top: -4rem;
+  }
+  .star-img {
+    width: 38px;
+    height: 38px;
+  }
+}
+@media (max-width: 465px) {
+  .tight {
+    padding: 8rem 6rem 1.5rem 6rem;
+  }
+  .wrapper {
+    padding: 0 0.5rem 0 0.5rem;
   }
   .center {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+  .left-star {
+    left: -5.8rem;
+    bottom: -3rem;
+  }
+  .right-star {
+    right: -6.5rem;
+    top: -3.8rem;
   }
   .me {
     grid-row: 1;
@@ -256,5 +387,41 @@ img {
   }
   .details {
     margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .tight {
+    padding: 8rem 2rem 1.5rem 2rem;
+  }
+
+  .left-star {
+    left: -2.8rem;
+    bottom: -3rem;
+  }
+  .right-star {
+    right: -5.7rem;
+    top: -3.8rem;
+  }
+  .star-img {
+    width: 35px;
+    height: 35px;
+  }
+  .wrapper {
+    padding: 0 0.25rem 0 0.25rem;
+  }
+}
+@media (max-width: 350px) {
+  .left-star {
+    left: -3.5rem;
+    bottom: -3rem;
+  }
+  .right-star {
+    right: -5.7rem;
+    top: -3.8rem;
+  }
+  .star-img {
+    width: 33px;
+    height: 33px;
   }
 }

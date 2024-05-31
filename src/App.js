@@ -1,9 +1,9 @@
 import React from "react";
 import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
+	BrowserRouter as Router,
+	Routes,
+	Route,
+	Navigate,
 } from "react-router-dom";
 import "./App.css";
 import NavBar from "./components/NavBar";
@@ -23,31 +23,31 @@ import "./fonts/acorn.woff";
 import "./fonts/benz.woff";
 
 function App() {
-  return (
-    <Router>
-      <ScrollToTop />
-      <header>
-        <NavBar />
-      </header>
-      <Canvas />
-      <main>
-        <div className="content">
-          <Routes>
-            <Route path="/" element={<Work />} />
-            <Route path="/work" element={<Navigate to="/" replace />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<NotFound />} />
-            <Route path="/work/wordle" element={<WorkWordle />} />
-            <Route path="/work/deepLearning" element={<WorkDL />} />
-            <Route path="/work/lambertW" element={<WorkFiller />} />
-            <Route path="/work/2for1" element={<WorkFiller />} />
-            <Route path="/work/im2seq" element={<Im2Seq />} />
-          </Routes>
-        </div>
-      </main>
-      <Footer />
-    </Router>
-  );
+	return (
+		<Router>
+			<ScrollToTop />
+			<header>
+				<NavBar />
+			</header>
+			<Canvas />
+			<main>
+				<div className="content">
+					<Routes>
+						<Route path="/" element={<Work />} />
+						<Route path="/work" element={<Navigate to="/" replace />} />
+						<Route path="/about" element={<About />} />
+						<Route path="/contact" element={<Contact />} />
+						<Route path="*" element={<NotFound />} />
+						<Route path="/work/wordle" element={<WorkWordle />} />
+						<Route path="/work/deepLearning" element={<WorkDL />} />
+						<Route path="/work/lambertW" element={<WorkFiller />} />
+						<Route path="/work/2for1" element={<WorkFiller />} />
+						<Route path="/work/im2seq" element={<Im2Seq />} />
+					</Routes>
+				</div>
+			</main>
+			<Footer />
+		</Router>
+	);
 }
 export default App;

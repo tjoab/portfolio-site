@@ -35,7 +35,7 @@
   margin-bottom: 1rem;
   text-align: justify;
 }
-@media (max-width: 560px) {
+@media (max-width: 750px) {
   .blurbGridItem {
     grid-column-start: 2;
     grid-column-end: 25;

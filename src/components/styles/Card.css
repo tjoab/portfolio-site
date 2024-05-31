@@ -148,24 +148,25 @@ figure {
   .card {
     max-height: 380px;
   }}
-
-@media (max-width: 430px) {
+  @media (max-width: 480px) {
     .card {
-      max-height: 310px;
+      max-height: 350px;
     }
 }
+@media (max-width: 461px) {
+  .card {
+    max-height: 330px;
+  }
+}
+
 @media (max-width: 410px) {
   .card {
-    max-height: 300px;
+    max-height: 315px;
   }
 }
 @media (max-width: 400px) {
   .card {
-    max-height: 295px;
+    max-height: 305px;
   }
 }
-@media (max-width: 390px) {
-  .card {
-    max-height: 290px;
-  }
-}
+

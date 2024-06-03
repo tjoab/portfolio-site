@@ -24,7 +24,6 @@
   text-decoration: none;
   box-sizing: border-box;
   overflow: hidden;
-
 }
 
 .card-wrap {
@@ -74,7 +73,7 @@ h2 {
 }
 
 .image-holder {
-  width: 101%;
+  width: 102%;
   transform: translateY(-4px);
 }
 
@@ -125,8 +124,8 @@ figure {
     margin-top: 2rem;
   }
   .image-holder {
-    width: 101%;
-    transform: translateX(-1px);
+    width: 102%;
+    transform: translateX(-2px);
   }
 }
 @media (max-width: 745px) {
